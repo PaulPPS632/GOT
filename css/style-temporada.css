@@ -1,0 +1,106 @@
+:root{
+    --morado-oscuro: rgb(71, 16, 193);
+    --morado-claro: rgb(158, 134, 255);
+    --color-letras: rgb(170, 170, 170);
+}
+/*Inicio del flex contenedor de capitulos */
+.flex-container-episodios{
+    margin: auto;
+}
+.flex-episodios{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-item-ep{
+    width: 380px;
+    height: 300px;
+}
+.container-flex_item-ep{
+    width: 100%;
+    height: 100%;
+    font-family: 'rubik';
+}
+.imagen-ep{
+    height: 202px;
+    margin: 10px;
+    z-index: 1;
+}
+.imagen-ep img{
+    width: 380;
+    height: 202px;
+}
+.numero-ep{
+    transform: translateY(-200px);
+    z-index: 10;
+    margin-left: 10px;
+    background-image: linear-gradient(90deg, rgb(71, 16, 193), rgb(120, 87, 255) 92%, rgb(129, 155, 253) 100%);;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 10px;
+    color: #fff;
+    width: 130px;
+    height: 35px;
+    z-index: 100;
+}
+.numero-ep:hover{
+    background-color:rgb(71, 16, 193);
+    background-image: none;
+    cursor: pointer;
+}
+
+.numero-ep .icono-play{
+    margin: auto;
+    display: inline-block;
+    font-size: 25px;
+    padding: 0;
+}
+.numero-ep .text{
+    display: inline-block;
+    transform: translateY(-8px);
+}
+.nombre-ep{
+    margin-left: 10px;
+    box-shadow: transparent;
+}
+.duracion-ep{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.nombre-ep:hover{
+    color: #fff;
+}
+.duracion-ep{
+    color: #fff;
+}
+/*Inicio del flex contenedor de capitulos */
+.container-slider-temporadas{
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-letras);
+    font-family: 'rubik';
+    font-size: 20px;
+    border-bottom: 1px solid var(--color-letras);
+}
+.titulo-slider{
+    margin: auto 0;
+    float: left;
+}
+.container-temporadas{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    height: 40px;
+}
+.numero{
+    display: inline-block;
+    margin: auto;
+    padding: 0 30px;
+    margin-bottom: 0;
+}
+.seleccionado{
+    color: #fff;
+    border-bottom: 4px solid var(--morado-claro);
+}
+.no_seleccionado{
+    margin-bottom: 4px;
+}

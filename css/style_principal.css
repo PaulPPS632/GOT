@@ -1,0 +1,128 @@
+@import url(//db.onlinewebfonts.com/c/97c4b25dc74e0ab045154e75a8fdd69d?family=Game+of+Thrones);
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --color-letras: rgb(170, 170, 170);
+    --color-fondo: rgb(21, 22, 22);
+}
+body{
+    background-color: var(--color-fondo);
+}
+a{
+    text-decoration: none;
+    color: var(--color-letras);
+}
+
+/*Inicio de Header*/
+
+.navegador-temporadas{
+    display: none;
+}
+.logo{
+    font-family: Game of Thrones;
+    letter-spacing: 2px;
+    font-size: 30px;
+    margin: auto 0;
+    width: 400px;
+}
+li{
+    list-style: none;
+    display: inline-block;
+}
+.header{
+    margin: 10px;
+    padding: 10px;
+    color: rgb(170, 170, 170);
+    border-bottom: 1px solid var(--color-letras);
+}
+.container-header{
+    display: flex;
+    justify-content: space-between;
+}
+.navegador{
+    width: calc(100% - 400px);
+}
+.navegador-principal{
+    float: right;
+}
+.navegador-principal ul li{
+    padding: 10px 20px;
+    font-size: 25px;
+}
+ion-icon:hover{
+    color:#fff;
+}
+
+/*Fin de Header*/
+
+/*Inicio de Main con Grid
+  Main y Aside*/
+
+.grid-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.grid-blanco{
+    width: 9%;
+    min-width: 40px;
+}
+.grid-main{
+    width: 75%;
+}
+.grid-aside{
+    background-color: rgb(22, 22, 22);
+    width: 16%;
+}
+.aside-contenido{
+    border-bottom: 0.1px solid var(--color-letras);
+    padding: 10px ;
+    width: 220px;
+    margin: auto;
+    font-size: 18px;
+    color: rgb(170, 170, 170);
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+}
+.aside-contenido div{
+    margin: 0 0 4px 0;
+}
+.aside-contenido div:hover{
+    color: #fff;
+    cursor: pointer;
+}
+.aside-contenido div a:hover{
+    color: #fff;
+    cursor: pointer;
+}
+/*Fin de Main y Aside*/
+
+
+/*INICIO del Footer*/
+.container-footer{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-top: 1px solid var(--color-letras);
+    color: var(--color-letras);
+}
+.derechos{
+    margin: auto 0;
+}
+.btn-top{
+    margin: auto 0;
+}
+/*FIN del Footer*/
+.Titulo{
+    font-family: Game of Thrones;
+    word-spacing: 5px;
+    letter-spacing: 5px;
+}
+
+
