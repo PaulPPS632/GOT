@@ -1,0 +1,39 @@
+/*Inicio de Main con Grid
+  Main y Aside*/
+
+.grid-container{
+    display: flex;
+    grid-template-areas: 
+    "blanco main main main main main aside"
+    "blanco main main main main main aside";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr minmax(250px, 1fr);
+}
+.grid-blanco{
+    grid-area: blanco;
+}
+.grid-main{
+    grid-area: main;
+}
+.grid-aside{
+    background-color: rgb(21, 22, 22);
+    grid-area: aside;
+}
+.aside-contenido{
+    border-bottom: 0.1px solid var(--color-letras);
+    padding: 10px ;
+    width: 220px;
+    margin: auto;
+    font-size: 18px;
+    color: rgb(170, 170, 170);
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+}
+.aside-contenido div{
+    margin: 0 0 4px 0;
+}
+.aside-contenido>div:hover{
+    color: #fff;
+    cursor: pointer;
+}
+/*Fin de Main y Aside*/
